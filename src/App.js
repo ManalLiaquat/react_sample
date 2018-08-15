@@ -898,6 +898,7 @@ class App extends Component {
           <p>Using above API's, you've to render all the users with their names, emails and their posts. Use `id` as a key with each data rendering.</p>
 
           {usersAPI.map((value, index) => {
+            // eslint-disable-next-line
             return postAPI.map(posts => {
               if (posts.userId === value.id) {
 
